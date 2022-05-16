@@ -1,0 +1,31 @@
+<configuration>
+  <property>
+      <name>hbase.client.connection.impl</name>
+      <value>com.alibaba.hbase.client.AliHBaseUEConnection</value>
+  </property>
+  <!--
+  集群的连接地址(公网地址)
+  -->
+  <property>
+      <name>hbase.client.endpoint</name>
+
+      <value>ld-uf6w1y03mb950v52e-proxy-hbaseue.hbaseue.rds.aliyuncs.com:30020</value>
+      <!-- 公网地址
+      <value>ld-uf6w1y03mb950v52e-proxy-hbaseue-pub.hbaseue.rds.aliyuncs.com:30020</value>
+      -->
+  </property>
+
+<!--    ld-uf6w1y03mb950v52e-proxy-hbaseue.hbaseue.rds.aliyuncs.com:30020-->
+<!--  公网地址  ld-uf6w1y03mb950v52e-proxy-hbaseue-pub.hbaseue.rds.aliyuncs.com:30020-->
+  <!--
+  设置用户名密码，默认root:root，可根据实际情况调整
+  -->
+  <property>
+      <name>hbase.client.username</name>
+      <value>root</value>
+  </property>
+  <property>
+      <name>hbase.client.password</name>
+      <value>root</value>
+  </property>
+</configuration>
